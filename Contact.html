@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Crypto Analyzer</title>
+        <!-- Bootstrap CSS link -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Contact.css">
+    </head>
+    <body>
+        <header>
+            <!-- Bootstrap Navigation Bar with Color -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-info">
+                <a class="navbar-brand text-white" href="#">Crypto Analyzer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Predict.html">Predict</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="News.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            
+
+            <!-- Contact Form and Address Section using Bootstrap Grid -->
+            <section id="contact-form" class="container mt-5">
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Contact Us</h2>
+                        <form action="/submit" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="query">Query</label>
+                                <textarea class="form-control" id="query" name="query" rows="4" placeholder="Enter your query" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <!-- Address Section -->
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Our Address</h2>
+                        <p>sirifort institute of management studies,rohini<br>rohini, new delhi, india</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.google.com/maps/place/Sirifort+Institute+Of+Management+Studies/@28.7305361,77.0929937,727m/data=!3m2!1e3!4b1!4m6!3m5!1s0x390d06e8703a46b3:0x2e01057562e081f9!8m2!3d28.7305314!4d77.0955686!16s%2Fg%2F1tghbjb2?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark text-white text-center py-3">
+            &copy; 2023 Crypto Analyzer. All rights reserved.
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+    </html>

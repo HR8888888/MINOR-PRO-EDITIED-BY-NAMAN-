@@ -1,0 +1,66 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Crypto Analyzer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Success.css">
+</head>
+<body>
+    <header>
+        <!-- Bootstrap Navigation Bar with Color -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand text-white" href="#">Crypto Analyzer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <h2 class="text-primary">Recent Queries About Crypto Analyzer</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Query</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% queries.forEach(function(query) { %>
+                        <tr>
+                            <td><%= query.name %></td>
+                            <td><%= query.email %></td>
+                            <td><%= query.phone %></td>
+                            <td><%= query.query %></td>
+                            <td>
+                                <form action="/delete/<%= query._id %>" method="post" onsubmit="return confirm('Are you sure you want to delete this query?');">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2023 Crypto Analyzer. All rights reserved.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Analyzer - Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Bootstrap Navigation Bar with Color -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand text-white" href="#">Crypto Analyzer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Predict.html">Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-white" href="Contact.html">Contact</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="News.html">News</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-white" href="Login.html">Login</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="crypto-search" class="container mt-5">
+            
+                        <div class="input-group-append" style="display: none;">
+                            <button id="search-button" class="btn btn-primary" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="crypto-result" class="mt-4">
+                <!-- Crypto search results will be displayed here -->
+            </div>
+        </section>
+        <img src="./Images/images.jpg" alt="" height="300" width="100%" class="image">
+        <section id="crypto-prediction" class="container">
+            <div class="my-class1">
+                <h2 class="text-primary">Cryptocurrency Price Prediction for tommorow</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="text" id="crypto-input-prediction" class="form-control" placeholder="Enter cryptocurrency name for prediction" size="300">
+                            <div class="input-group-append">
+                                <button id="prediction-button" class="btn btn-primary" type="button">Predict</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="crypto-prediction-result" class="mt-4">
+                <!-- Cryptocurrency price prediction will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark text-white text-center py-3">
+        &copy; 2023 Crypto Analyzer. All rights reserved.
+    </footer>
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include the existing script.js file for prediction -->
+    <script src="script.js"></script>
+</body>
+</html>
